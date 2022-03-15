@@ -4,6 +4,13 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Greeting from "./Greeting";
 import Notifications from "./Notifications";
+import ShoppingList from "./ShoppingList";
+
+const todos = [
+  { completed: false, description: "Finish the Lists & Tables checkpoint" },
+  { completed: false, description: "Clean my desk" },
+  { completed: false, description: "Make lunch" },
+];
 
 function App() {
   const notifications = ["You received a package", "The weather is sunny"];
@@ -15,6 +22,7 @@ function App() {
       <WelcomeBack name="Joe" adjective="funny" />
       <WelcomeBack name="Anna" adjective="clever" />
       <WelcomeBack />
+      <ShoppingList items={todos} />
       <Footer />
     </>
   );
